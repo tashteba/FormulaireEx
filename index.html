@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- mon formulaire -->
+    <form>
+        <h1>Formulaire Condidature</h1>
+        <fieldset>
+    <label for="prenom">Prénom</label>
+    <input type="text" name ='prenom' id = 'prenom'>
+    <label for="nom">Nom</label>
+    <input type="text" name ='nom' id = 'nom'>
+    <label for="age">Age</label>
+    <input type="number" name ='age' id = 'age'>
+    </fieldset>
+
+    <fieldset>
+        <legend>Vous êtes :</legend>
+        <input type="radio" id="homme" name ='sex' value="homme">
+        <label for="homme">Homme</label>
+        <input type="radio" id="femme" name ='sex' value="femme">
+        <label for="femme">Femme</label>
+    </fieldset>
+
+    <fieldset>
+        <label for="email">Votre email : </label>
+        <input type="email" id="email" pattern="" size="30" required>
+    </fieldset>
+
+    <fieldset>
+        <label for="Postal">Votre Adresse postal :</label>
+        <textarea name="text" id="Postal" cols="10" rows="5"></textarea>
+
+        <label for="codePostal">Votre code postal :</label>
+        <input type="number" id="codePostal" max="5" min="5">
+
+        <label for="ville">Votre Ville :</label>
+        <input type="text" id="ville">
+
+    </fieldset>
+    <fieldset>
+
+    <label for="metier">Votre Métier exercé :</label>
+    <select name="MetierExerce" id="metier">
+    <option value="">Chef</option>
+    <option value="">Ing</option>   
+    <option value="">PTS</option>   
+    <option value="">Service</option>  
+</select> 
+    </fieldset>
+
+    <fieldset>
+        <label for="nat">Votre Nationalité :</label>
+        <select name="Nationalite" id="nat">
+            <option value="">Français</option>
+            <option value="" selected>Belg</option>   
+            <option value="">Espain</option>   
+            <option value="">Hors d'europe</option>  
+        </select> 
+
+        <label for="date">Votre date de naissance : </label>
+        <input type="date" id="date" name="dateNaissance" value="2000-01-01" min="1940-01-01" max="2020-01-01">
+
+        <label for="paye">Votre paye de naissance :</label>
+        <input type="text" id="paye">
+    
+        </fieldset>
+
+        <fieldset>
+
+            <label for="numeroSecurite"> Votre numero de sécurité social :</label>
+            <input type="number" id="numeroSecurite" name="numeroSecurite">
+
+            <label for="numeropassport"> Votre numero du passeport:</label>
+            <input type="number" id="numeropassport" name="numeropassport">
+        
+        
+        </fieldset>
+
+        <fieldset>
+
+            <label for="numeroPassport"> Votre Date de délivrance du passeport :</label>
+            <input type="date" id="numeroPassport" name="numeroPassport">
+
+            <label for="numeroPassportValid"> Votre Date de validité du passeport :</label>
+            <input type="date" id="numeroPassportValid"  name="numeroPassportValid">
+        
+        </fieldset>
+
+        <fieldset>
+        <input type="submit" value="Envoyer le formulaire">
+        </fieldset>
+
+
+
+
+    
+
+    </form>
+</body>
+</html>
